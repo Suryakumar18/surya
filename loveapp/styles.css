@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#nameInput, #messageDisplay {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+button {
+    position: relative;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 900px;
+}
+
+button:hover {
+    background-color: #ff8f8f;
+}
+
+#messageDisplay p {
+    font-style: italic;
+    margin-top: 20px;
+}
+/* ... Previous CSS rules ... */
+
+.container {
+    position: absolute;
+    text-align: center;
+    animation: fadeIn 1s ease;
+    position: relative; /* Add this line */
+    overflow: hidden; /* Add this line */
+}
+
+/* ... Previous CSS rules ... */
+
+/* Heart animation */
+@keyframes heartAnimation {
+    0%, 100% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(-20px) rotate(45deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-40px) rotate(0deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translateY(-20px) rotate(-45deg);
+        opacity: 0.4;
+    }
+}
+
+.heart {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6b6b;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 70%, 18% 100%, 0% 38%);
+    animation: heartAnimation 2s linear infinite;
+    opacity: 0; /* Start hidden */
+}
+
+
+#connectButton {
+    margin-top: 20px;
+}
+
+#instagramBtn, #whatsappBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#instagramBtn:hover, #whatsappBtn:hover {
+    background-color: #2980b9;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7; /* Set a background color as fallback */
+    overflow: hidden; /* Hide horizontal scrollbars caused by video */
+}
+
+#backgroundVideo {
+    position: fixed; /* Fixed positioning for the video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the whole viewport */
+    z-index: -1; /* Place the video behind other content */
+}
+
+
+.container {
+    text-align: center;
+    animation: fadeIn 1s ease;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ... Rest of the CSS rules ... */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ... Your existing CSS rules ... */
+
+.unmute-button{
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 999 !important;
+}
+
+/* ... Rest of your CSS ... */
